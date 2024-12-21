@@ -1,0 +1,15 @@
+body {
+    max-width: 320px;
+}
+
+header {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+.about__text {
+    width: 90%;
+}

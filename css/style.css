@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'TT Lakes Thin';
+    src: url('../fonts/TTLakes-Thin.eot'); /* Для IE */
+    src: url('../fonts/TTLakes-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+         url('../fonts/TTLakes-Thin.woff') format('woff'), /* Современные браузеры */
+         url('../fonts/TTLakes-Thin.ttf') format('truetype'); /* Резерв */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'TT Lakes Thin', Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #D9FFF5;
+    padding-left: 5%;
+}
+
+.header__block1, .header__block2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.header__block1::after { 
+    content: "";
+    position: relative;
+    height: 32px;
+    width: 2px;
+    background-color: #EAEAEA;
+}
+
+.button {
+    border: 0;
+}
+
+.main {
+    margin-top: 30px;
+}
+
+.main__title {
+    font-size: 28px;
+    color: #1B1C21;
+    font-weight: bold;
+    padding-left: 5%;
+    border-left: 4px solid #41F6D7;
+    margin-top: 30px;
+}
+
+.main__navigator {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Для Firefox */
+    /* gap: 5%;  */
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.menu::-webkit-scrollbar {
+    display: none; /* Для Chrome, Safari и Edge */
+}
+
+.navigator {
+    padding-left: 5%;
+}
+
+.main__text {
+    padding-left: 5%;
+    max-height: 90px; /* Ограничивает высоту */
+    overflow: hidden; /* Скрывает текст, выходящий за пределы */
+    text-overflow: ellipsis; /* Добавляет "..." для обрезанного текста */
+    /*white-space: nowrap;  Убирает перенос строк */
+    margin-top: 30px;
+}
+
+.main__expand {
+    margin-top: 30px;
+    padding-left: 5%;
+}
