@@ -13,3 +13,143 @@ main {
 .about__text {
     width: 90%;
 }
+
+.header__block2 {
+    display: none;
+}
+
+.main__container-setting {
+    display: none;
+}
+
+.main__item7 {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        /* max-width: 768px; */
+        max-width: 100%;
+    }
+    
+    header {
+        width: 100%;
+    }
+
+    .header {
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    
+    main {
+        width: 100%;
+        padding-top: 20%;
+    }
+
+    .header__block2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__about {
+        display: inline-flex;
+        flex-direction: row;
+        gap: 5%;
+    }
+    
+    .about__text {
+        width: 90%;
+    }
+
+
+    .main__text {
+        padding-left: 5%;
+        max-height: 160px; 
+        width: 312px;
+
+    }
+
+    .main__expand {
+        direction: flex;
+        flex-direction: row;
+
+    }
+}
+
+@media only screen and (min-width: 1120px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    .header {
+        display: none;
+    }
+
+    .main__text {
+        width: 490px;
+        height: auto;
+        overflow: visible; 
+        padding-left: 50px;
+    }
+
+    .main__expand {
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+
+    div.main__img {
+        /* width: 60%; */
+        margin-right: 50px;
+    }
+
+    .main__title {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        width: 100%; 
+    }
+    
+    .main__title-name {
+        display: flex; 
+        flex-direction: row;
+        margin-top: 30px;
+    }
+    
+    .main__container-setting {
+        display: flex;
+        margin-top: 30px;
+        gap: 25px;
+        margin-right: 50px;
+    }
+
+    .main__repairs {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .main__status-request {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .main__item7 {
+        display: block;
+    }
+
+    .main__navigator {
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        justify-content: flex-start;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .navigator {
+        margin-top: 20px;
+    }
+}
