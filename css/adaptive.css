@@ -22,10 +22,6 @@ main {
     display: none;
 }
 
-.main__item7 {
-    display: none;
-}
-
 @media only screen and (min-width: 768px) {
     body {
         /* max-width: 768px; */
