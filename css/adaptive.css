@@ -109,8 +109,8 @@ main {
     }
     
     .main__title-name {
-        display: flex; 
-        flex-direction: row;
+        /* display: flex;  */
+        /* flex-direction: row; */
         margin-top: 30px;
     }
     
@@ -119,18 +119,19 @@ main {
         margin-top: 30px;
         gap: 25px;
         margin-right: 50px;
+        align-items: center;
     }
 
     .main__repairs {
         display: flex;
         align-items: center;
-        gap: 10px;
+        align-self: center;
+        vertical-align: middle;
     }
 
     .main__status-request {
         display: flex;
         align-items: center;
-        gap: 10px;
     }
     .main__item7 {
         display: block;
