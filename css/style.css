@@ -12,22 +12,23 @@ body {
     font-family: 'TT Lakes Thin', Arial, sans-serif;
 }
 
-.header {
+header {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
-    align-items: center;
+    justify-content: space-between;
     padding-top: 5%;
     padding-bottom: 5%;
     border-bottom: 1px solid #D9FFF5;
-    padding-left: 5%;
+}
+
+.button--menu {
+    margin-right: 10px;
 }
 
 .header__block1, .header__block2 {
     display: flex;
-    justify-content: space-around;
+    margin-left: 10px;
     align-items: center;
-    flex-grow: 1;
 }
 
 .header__block1::after { 
@@ -35,6 +36,7 @@ body {
     position: relative;
     height: 32px;
     width: 2px;
+    margin-left: 10px;
     background-color: #EAEAEA;
 }
 
@@ -74,7 +76,12 @@ body {
 }
 
 .navigator {
-    padding-left: 5%;
+    margin-left: 4%;
+    padding: 10px;
+}
+
+.navigator:hover {
+    border: 2px solid #B8FFEC;
 }
 
 .main__text {
