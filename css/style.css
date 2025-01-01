@@ -16,6 +16,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding-top: 5%;
     padding-bottom: 5%;
     border-bottom: 1px solid #D9FFF5;
@@ -25,19 +26,29 @@ header {
     margin-right: 10px;
 }
 
-.header__block1, .header__block2 {
-    display: flex;
-    margin-left: 10px;
+.header__block--contact_settings {
     align-items: center;
 }
 
-.header__block1::after { 
-    content: "";
-    position: relative;
-    height: 32px;
-    width: 2px;
+.header__block--contact .button,
+.header__block--settings .button {
+    margin-right: 10px; 
+}
+
+.header__menu--icon, .header__block--settings {
+    display: flex;
     margin-left: 10px;
-    background-color: #EAEAEA;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.header__menu--icon::after {
+    content: url("../svg/divider.svg");
+    display: flex;
+    width: 2px;
+    height: 32px;
+    margin-left: 10%;
+
 }
 
 .button {
@@ -66,7 +77,6 @@ header {
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none; /* Для Firefox */
-    /* gap: 5%;  */
     justify-content: flex-start;
     margin-top: 30px;
 }
@@ -75,12 +85,16 @@ header {
     display: none; /* Для Chrome, Safari и Edge */
 }
 
-.navigator {
+.main__item {
     margin-left: 4%;
     padding: 10px;
 }
 
-.navigator:hover {
+.first{
+    border: 2px solid #B8FFEC;
+}
+
+.main__item:hover {
     border: 2px solid #B8FFEC;
 }
 
@@ -89,7 +103,6 @@ header {
     max-height: 90px; /* Ограничивает высоту */
     overflow: hidden; /* Скрывает текст, выходящий за пределы */
     text-overflow: ellipsis; /* Добавляет "..." для обрезанного текста */
-    /*white-space: nowrap;  Убирает перенос строк */
     margin-top: 30px;
 }
 

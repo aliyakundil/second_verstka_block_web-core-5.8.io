@@ -14,7 +14,7 @@ main {
     width: 90%;
 }
 
-.header__block2 {
+.header__block--contact {
     display: none;
 }
 
@@ -28,7 +28,6 @@ main {
     }
     
     header {
-        display: flex;
         padding-top: 3%;
         padding-bottom: 3%;
     }
@@ -37,23 +36,15 @@ main {
         padding-top: 5%;
     }
 
-    .header__block {
+    .header__block--contact_settings {
         display: flex;
         justify-content: flex-end;
         margin-right: 10px;
-        align-items: center;
     }
 
-    .header__block1::after { 
-        content: "";
-        position: relative;
-        height: 32px;
-        width: 2px;
-        background-color: #EAEAEA;
-    }
-
-    .header__block2 {
+    .header__block--contact {
         display: flex;
+        row-gap: 10px;
     }
 
     .main__about {
@@ -68,7 +59,6 @@ main {
 
 
     .main__text {
-        padding-left: 5%;
         max-height: 160px; 
         width: 312px;
 
@@ -78,6 +68,20 @@ main {
         direction: flex;
         flex-direction: row;
 
+    }
+
+    .header__menu--icon::after {
+        display: none;
+    }
+
+    .button--menu::after, .header__block--contact::after {
+        content: url("../svg/divider.svg");
+        display: inline-flex;
+        align-items: center;
+        flex-direction: row;
+        width: 2px;
+        height: 32px;
+        margin-left: 15px; 
     }
 }
 
@@ -139,9 +143,6 @@ main {
         display: flex;
         align-items: center;
     }
-    .main__item7 {
-        display: block;
-    }
 
     .main__navigator {
         display: flex;
@@ -152,7 +153,7 @@ main {
         flex-wrap: wrap;
     }
 
-    .navigator {
+    .main__item {
         margin-top: 20px;
     }
 }
